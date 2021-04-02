@@ -4,8 +4,10 @@
 #include "DrawableShape.h"
 
 int main() {
-  Rectangle rectangle(40, '+', '0');
-  //rectangle.drow();
-  Circle circle(70, '+', '0');
+  Rectangle rectangle(5, '+', '0');
+  rectangle.drow();
+  Circle circle(11, '+', '0');
+  circle.drow();
+  circle.setSize(10);
   circle.drow();
 }

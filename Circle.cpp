@@ -5,7 +5,6 @@
 #include <cmath>
 
 Circle::Circle(size_t size, char backgroundSym, char lineSym){
-  std::cout << "creating" << "\n";
   _sizeMatrix = size;
   _backgroundSymbol = backgroundSym;
   _linesymbol = lineSym;
@@ -60,7 +59,6 @@ void Circle::drow(){
      _matrix[radius - coordinate][i + radius - 1] = _linesymbol;
 
     }
-    std::cout << "check" << "\n";
   }
   for (int i = 0; i < _sizeMatrix; ++i){
     for (int j = 0; j < _sizeMatrix; ++j){
