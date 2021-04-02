@@ -4,7 +4,7 @@
 
 class DrawableShape {
 protected:
-	char _linesymbol, _backgroundSymbol;
+	char _lineSymbol, _backgroundSymbol;
 	size_t _sizeMatrix;
 	char** _matrix;
 	Type _type;

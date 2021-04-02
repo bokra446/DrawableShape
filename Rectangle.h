@@ -6,4 +6,6 @@ public:
 	void drow() override;
 private:
   size_t _lastSize = 0;
+  char _lastBackgroundSym;
+  char _lastLineSym;
 };

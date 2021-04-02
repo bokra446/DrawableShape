@@ -1,7 +1,7 @@
 #include "DrawableShape.h"
 
 void DrawableShape::setSymbol(char sym) {
-	_linesymbol = sym;
+	_lineSymbol = sym;
 }
 void DrawableShape::setBackgoundSymbol(char sym) {
 	_backgroundSymbol = sym;
