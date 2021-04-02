@@ -1,20 +1,18 @@
 #pragma once
 #include <stdlib.h>
+#include "Type.h"
 
 class DrawableShape {
 protected:
 	char _linesymbol, _backgroundSymbol;
 	size_t _sizeMatrix;
 	char** _matrix;
-	//
-	enum class Type{
-		Rectangle,
-    Circle
-	};
+	Type _type;
 public:
+  //DrawableShape() = 0;
 	void setSymbol(char);
 	void setBackgoundSymbol(char);
-	Type getType(Type Shape);
+	Type getType();
 	virtual void drow() = 0;
 	void size(size_t);
 	void setSize(size_t);

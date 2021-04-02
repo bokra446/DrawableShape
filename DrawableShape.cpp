@@ -14,3 +14,7 @@ void DrawableShape::size(size_t length) {
 void DrawableShape::setSize(size_t length) {
 	size(length);
 }
+
+Type DrawableShape::getType(){
+  return _type;
+}
