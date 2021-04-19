@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Rectangle.h"
 #include <cstring>
-#include <iostream>
+
 
 Rectangle::Rectangle(size_t size, char backgroundSym, char lineSym){
   _sizeMatrix = size;
@@ -10,7 +10,7 @@ Rectangle::Rectangle(size_t size, char backgroundSym, char lineSym){
   _type = Type::Rectangle;
 }
 
-void Rectangle::drow() {
+/*void Rectangle::drow() {
   if ((_lastSize != _sizeMatrix) || (_lastBackgroundSym != _backgroundSymbol) || (_lastLineSym != _lineSymbol)){
     if (_lastSize != 0) {
       for (int i = 0; i < _sizeMatrix; ++i){
@@ -43,5 +43,13 @@ void Rectangle::drow() {
       std::cout << _matrix[i][j];
     }
     std::cout << std::endl;
+  }
+}*/
+void Rectangle::fillMatrix(){
+  for (int i = 0; i < _sizeMatrix; ++i){
+    _matrix[0][i] = _lineSymbol;
+    _matrix[_sizeMatrix - 1][i] = _lineSymbol;
+    _matrix[i][0] = _lineSymbol;
+    _matrix[i][_sizeMatrix - 1] = _lineSymbol;
   }
 }
